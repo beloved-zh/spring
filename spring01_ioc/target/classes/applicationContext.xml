@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="mysql" class="com.zh.dao.impl.UserDaoMySqlImpl"></bean>
+    <bean id="oracle" class="com.zh.dao.impl.UserDaoOracleImpl"></bean>
+    <bean id="sqlserver" class="com.zh.dao.impl.UserDaoSqlserverImpl"></bean>
+
+
+    <bean id="ser" class="com.zh.service.impl.UserServiceImpl">
+        <!--
+            ref : 引用spring容器中创建好的对象
+            value : 具体的值
+        -->
+        <property name="dao" ref="sqlserver"></property>
+    </bean>
+
+</beans>

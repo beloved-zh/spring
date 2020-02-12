@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  ioc创建对象的方式
+          在配置文件加载时，ioc容器中的所有对象，就已经被初始化
+    -->
+
+
+    <!--  使用无参构造创建对象，默认
+          对象必须有无参构造，否则无法初始化
+    -->
+<!--    <bean id="user" class="com.zh.com.zh.pojo.User">-->
+<!--        <property name="name" value="张恒"></property>-->
+<!--    </bean>-->
+
+
+    <!--  有参构造创建对象  -->
+    <!--  1.使用下标赋值  -->
+<!--    <bean id="user" class="com.zh.com.zh.pojo.User">-->
+<!--        <constructor-arg index="0" value="张三"></constructor-arg>-->
+<!--    </bean>-->
+
+    <!--  2.通过数据类型创建   不建议使用
+            基本数据类型可以直接写
+            引用数据类型要写全路径
+    -->
+<!--    <bean id="user" class="com.zh.com.zh.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="李四"></constructor-arg>-->
+<!--    </bean>-->
+
+    <!--  3.直接通过参数名创建  -->
+    <bean id="user" class="com.zh.pojo.User">
+        <constructor-arg name="name" value="王麻子"></constructor-arg>
+    </bean>
+
+    <bean id="userT" class="com.zh.pojo.UserT"></bean>
+</beans>

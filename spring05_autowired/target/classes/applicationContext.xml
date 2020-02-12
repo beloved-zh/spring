@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+        注解自动装配bean
+        1.导入约束  context
+            xmlns:context="http://www.springframework.org/schema/context"
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+        2.配置注解支持
+            <context:annotation-config/>
+
+        @Autowired
+            直接在属性上使用，也可以在set方法上使用
+            使用@Autowired可以省略set方法，前提是这个自动装配的属性在IOC容器中存在，且符合名字byname
+
+            @Nullable
+                字段标记了这个注解，说明这个字段可以为null
+                public People(@Nullable String name) {
+                    this.name = name;
+                }
+            @Autowired(required = false)
+                如果Autowired的required属性为false，说明这个对象可以为null否则不允许为空
+        @Qualifier
+            如果@Autowired自动装配的环境比较复杂。自动装配无法完成。
+            可以使用@Qualifier(value = "xxxx")配合@Autowired使用
+            指定唯一的bean对象注入
+            <bean id="dog11" class="com.zh.pojo.Dog"></bean>
+            <bean id="dog22" class="com.zh.pojo.Dog"></bean>
+
+            @Qualifier(value = "dog22")
+            private Dog dog;
+    -->
+    <context:annotation-config/>
+    <bean id="dog11" class="com.zh.pojo.Dog"></bean>
+    <bean id="dog22" class="com.zh.pojo.Dog"></bean>
+    <bean id="cat" class="com.zh.pojo.Cat"></bean>
+    <bean id="people" class="com.zh.pojo.People">
+        <property name="name" value="张三"></property>
+    </bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -19,6 +19,7 @@
         <module>spring06_anno</module>
         <module>spring07_appconfig</module>
         <module>spring09_aop</module>
+        <module>test</module>
     </modules>
 
     <dependencies>

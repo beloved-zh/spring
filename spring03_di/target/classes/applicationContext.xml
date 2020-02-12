@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        bean的作用域
+            1.单例模式(spring默认机制)
+                scope="singleton"
+                只会创建一个对象
+            2.原型模式
+                scope="prototype"
+                每次从容器中get，都会创建一个新的对象
+            3.request,session,application
+                只能在web开发中使用
+
+    -->
+
+
+    <!--  DI 依赖注入-->
+    <bean id="address" class="com.zh.pojo.Address">
+        <property name="address" value="陕西省咸阳市"></property>
+    </bean>
+    <bean id="student" class="com.zh.pojo.Student">
+        <!--  1.普通值注入     value  -->
+        <property name="name" value="张恒"></property>
+        <!--  2.bean注入      ref  -->
+        <property name="address" ref="address"></property>
+        <!--  3.数组注入       array  -->
+        <property name="books">
+            <array>
+                <value>西游记</value>
+                <value>红楼梦</value>
+                <value>水浒传</value>
+                <value>三国演义</value>
+            </array>
+        </property>
+        <!--  4.list  -->
+        <property name="hobbys">
+            <list>
+                <value>听歌</value>
+                <value>跳舞</value>
+                <value>打篮球</value>
+            </list>
+        </property>
+        <!--  5.Map  -->
+        <property name="card">
+            <map>
+                <entry key="电话" value="123456789"></entry>
+                <entry key="学号" value="987654321"></entry>
+            </map>
+        </property>
+        <!--  6.set  -->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>王者荣耀</value>
+            </set>
+        </property>
+        <!--  7.null 空值注入  -->
+        <property name="wife">
+            <null></null>
+        </property>
+        <!--  8.Properties 配置类-->
+        <property name="info">
+            <props>
+                <prop key="身份证">121546156181156</prop>
+                <prop key="性别">男</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
