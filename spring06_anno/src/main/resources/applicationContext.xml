@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启注解支持-->
+    <context:annotation-config/>
+    <!--指定要扫描的包，这个包下的注解就会生效-->
+    <context:component-scan base-package="com.zh"/>
+
+    <!--
+        @Component衍生注解
+            在web开发中，按照三层架构分层
+            dao:        @Repository
+            service:    @Service
+            controller: @Controller
+        四个注解的功能都是一样的，都是将某个类装配到ioc容器中，装配bean
+
+
+        @Scope("singleton")
+            作用域
+    -->
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
