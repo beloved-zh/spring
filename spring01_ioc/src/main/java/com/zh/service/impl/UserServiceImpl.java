@@ -1,6 +1,7 @@
 package com.zh.service.impl;
 
 import com.zh.dao.UserDao;
+import com.zh.dao.impl.UserDaoImpl;
 import com.zh.service.UserService;
 
 public class UserServiceImpl implements UserService {

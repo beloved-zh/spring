@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--DataSource：使用Spring的数据源替换Mybatis的配置-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+    <!--SqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--mybatis所有的配置，可以在此处实现-->
+        <!--别名-->
+        <property name="typeAliasesPackage" value="com.zh.pojo"/>
+        <!--当mybatis配置文件有设置的时候，绑定mybatis配置文件-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--映射Mapper.xml文件-->
+        <property name="mapperLocations" value="classpath:com/zh/mapper/*.xml"/>
+     </bean>
+    <!--
+        SqlSessionTemplate：基于Spring 的事务配置来自动提交、回滚、关闭 session。
+        SqlSessionTemplate：是sqlSession的模板
+        只能使用构造器注入sqlSessionFactory，因为SqlSessionTemplate
+        没有set方法
+    -->
+    <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="UserMapper" class="com.zh.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>-->
+
+    <bean id="UserMapper2" class="com.zh.mapper.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+</beans>

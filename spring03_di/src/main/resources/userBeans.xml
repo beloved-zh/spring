@@ -25,7 +25,7 @@
         c命名空间
         可以通过构造器注入 constructor-arg
     -->
-    <bean id="user2" class="com.zh.pojo.User" c:name="李四" c:age="20"></bean>
+    <bean id="user2" class="com.zh.pojo.User" c:name="李四" c:age="20" scope="singleton"></bean>
 
 
 

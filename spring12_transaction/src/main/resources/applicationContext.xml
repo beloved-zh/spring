@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--DataSource：使用Spring的数据源替换Mybatis的配置-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+    <!--SqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--mybatis所有的配置，可以在此处实现-->
+        <!--别名-->
+        <property name="typeAliasesPackage" value="com.zh.pojo"/>
+        <!--映射Mapper.xml文件-->
+        <property name="mapperLocations" value="classpath:com/zh/mapper/*.xml"/>
+     </bean>
+    <!--
+        SqlSessionTemplate：基于Spring 的事务配置来自动提交、回滚、关闭 session。
+        SqlSessionTemplate：是sqlSession的模板
+        只能使用构造器注入sqlSessionFactory，因为SqlSessionTemplate
+        没有set方法
+    -->
+    <!--<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <bean id="UserMapper" class="com.zh.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>-->
+
+    <bean id="UserMapper2" class="com.zh.mapper.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!--开启声明式事务 固定写法-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--<constructor-arg ref="dataSource" />-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--结合AOP实现事务的织入-->
+    <!--配置事务通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--给那些方法配置事务 name-->
+        <!--配置事务的传播特性 propagation
+             Spring中七种Propagation类的事务属性详解：
+             REQUIRED：支持当前事务，如果当前没有事务，就新建一个事务。这是最常见的选择。
+             SUPPORTS：支持当前事务，如果当前没有事务，就以非事务方式执行。
+             MANDATORY：支持当前事务，如果当前没有事务，就抛出异常。
+             REQUIRES_NEW：新建事务，如果当前存在事务，把当前事务挂起。
+             NOT_SUPPORTED：以非事务方式执行操作，如果当前存在事务，就把当前事务挂起。
+             NEVER：以非事务方式执行，如果当前存在事务，则抛出异常。
+             NESTED：支持当前事务，如果当前事务存在，则执行一个嵌套事务，如果当前没有事务，就新建一个事务。
+             read-only="true"  只读
+        -->
+        <tx:attributes>
+            <!--<tx:method name="add" propagation="REQUIRED"/>
+            <tx:method name="delete" propagation="REQUIRED"/>
+            <tx:method name="update" propagation="REQUIRED"/>
+            <tx:method name="findAll" read-only="true"/>-->
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--配置事务切入-->
+    <aop:config>
+                                                <!--给com.zh.mapper包下所有类的所有方法配置-->
+        <aop:pointcut id="txPoinCut" expression="execution(* com.zh.mapper.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoinCut"/>
+    </aop:config>
+</beans>

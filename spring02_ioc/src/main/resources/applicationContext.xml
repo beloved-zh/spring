@@ -35,5 +35,20 @@
         <constructor-arg name="name" value="王麻子"></constructor-arg>
     </bean>
 
-    <bean id="userT" class="com.zh.pojo.UserT"></bean>
+    <!--
+        id：Bean的唯一标识符，相当于对象名
+        class：bean对象所对应的全限定名
+        name：也是别名,name可以同时取多个别名
+    -->
+    <bean id="userT" class="com.zh.pojo.UserT" name="t,123"></bean>
+
+    <!--
+        别名：如果添加了别名，我们也可以使用别名获取这个对象
+        name:bean的id
+        alias：别名NewName
+    -->
+    <alias name="user" alias="User123"/>
+
+    <!--导入bean01.xml-->
+    <import resource="bean01.xml"/>
 </beans>

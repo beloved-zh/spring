@@ -11,14 +11,14 @@
     <!--  使用无参构造创建对象，默认
           对象必须有无参构造，否则无法初始化
     -->
-<!--    <bean id="user" class="com.zh.com.zh.pojo.User">-->
+<!--    <bean id="user" class="com.zh.pojo.User">-->
 <!--        <property name="name" value="张恒"></property>-->
 <!--    </bean>-->
 
 
     <!--  有参构造创建对象  -->
     <!--  1.使用下标赋值  -->
-<!--    <bean id="user" class="com.zh.com.zh.pojo.User">-->
+<!--    <bean id="user" class="com.zh.pojo.User">-->
 <!--        <constructor-arg index="0" value="张三"></constructor-arg>-->
 <!--    </bean>-->
 
@@ -26,7 +26,7 @@
             基本数据类型可以直接写
             引用数据类型要写全路径
     -->
-<!--    <bean id="user" class="com.zh.com.zh.pojo.User">-->
+<!--    <bean id="user" class="com.zh.pojo.User">-->
 <!--        <constructor-arg type="java.lang.String" value="李四"></constructor-arg>-->
 <!--    </bean>-->
 
@@ -35,5 +35,17 @@
         <constructor-arg name="name" value="王麻子"></constructor-arg>
     </bean>
 
-    <bean id="userT" class="com.zh.pojo.UserT"></bean>
+    <!--
+        id：Bean的唯一标识符，相当于对象名
+        class：bean对象所对应的全限定名
+        name：也是别名
+    -->
+    <bean id="userT" class="com.zh.pojo.UserT" name="t,123"></bean>
+
+    <!--
+        别名：如果添加了别名，我们也可以使用别名获取这个对象
+        name:bean的id
+        alias：别名NewName
+    -->
+    <alias name="user" alias="User123"/>
 </beans>

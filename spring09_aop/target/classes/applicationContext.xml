@@ -34,23 +34,23 @@
     </aop:config>-->
 
     <!--方式二：自定义类-->
-    <!--<bean id="diy" class="com.zh.diy.DiyPointCut"></bean>
+    <bean id="diy" class="com.zh.diy.DiyPointCut"></bean>
     <aop:config>
-        &lt;!&ndash;自定义切面 ref要引用的类&ndash;&gt;
+        <!--自定义切面 ref要引用的类-->
         <aop:aspect ref="diy">
-            &lt;!&ndash;切入点&ndash;&gt;
+            <!--切入点-->
             <aop:pointcut id="point" expression="execution(* com.zh.service.UserServiceImpl.*(..))"/>
-            &lt;!&ndash;类中的方法&ndash;&gt;
+            <!--类中的方法-->
             <aop:before method="befare" pointcut-ref="point"/>
             <aop:after method="after" pointcut-ref="point"/>
 
         </aop:aspect>
-    </aop:config>-->
+    </aop:config>
 
     <!--方式三：使用注解实现aop-->
-    <bean id="annotationPointCut" class="com.zh.diy.AnnotationPointCut"></bean>
-    <!--开启aop注解支持-->
-    <aop:aspectj-autoproxy/>
+    <!--<bean id="annotationPointCut" class="com.zh.diy.AnnotationPointCut"></bean>
+    &lt;!&ndash;开启aop注解支持&ndash;&gt;
+    <aop:aspectj-autoproxy/>-->
 </beans>
 
 
