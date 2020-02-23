@@ -1,113 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fca3e56-b8d5-46ed-a255-d2460d6db975" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3f5e287e-8ce5-4c85-aab1-da9790e4ea9e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring02_ioc/src/main/resources/bean01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring02_ioc/target/classes/com/zh/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring02_ioc/target/classes/com/zh/pojo/UserT.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo01/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo01/Host.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo01/Proxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo01/Rent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo02/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo02/Userservice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo02/UserserviceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo02/UserserviceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo03/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo03/Host.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo03/ProxyInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo03/Rent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo04/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/src/main/java/com/zh/demo04/ProxyInvocationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo01/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo01/Host.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo01/Proxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo01/Rent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo02/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo02/Userservice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo02/UserserviceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo02/UserserviceProxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo03/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo03/Host.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo03/ProxyInvocationHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo03/Rent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo04/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring10_proxy/target/classes/com/zh/demo04/ProxyInvocationHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/spring11_mybatis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/java/com/zh/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/java/com/zh/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/java/com/zh/mapper/UserMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/java/com/zh/mapper/UserMapperImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/java/com/zh/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/com/zh/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/com/zh/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/com/zh/mapper/UserMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/com/zh/mapper/UserMapperImpl2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/com/zh/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring11_mybatis/target/test-classes/MyTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/spring12_transaction.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/main/java/com/zh/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/main/java/com/zh/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/main/java/com/zh/mapper/UserMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/main/java/com/zh/mapper/UserMapperImpl2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/main/java/com/zh/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/src/test/java/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/classes/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/classes/com/zh/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/classes/com/zh/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/classes/com/zh/mapper/UserMapperImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/classes/com/zh/mapper/UserMapperImpl2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/classes/com/zh/pojo/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring12_transaction/target/test-classes/MyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring01_ioc/spring01_ioc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc/spring01_ioc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring01_ioc/src/main/java/com/zh/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc/src/main/java/com/zh/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring01_ioc/target/classes/com/zh/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring01_ioc/target/classes/com/zh/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring02_ioc/spring02_ioc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring02_ioc/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring02_ioc/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring02_ioc/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring02_ioc/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring02_ioc/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring02_ioc/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring02_ioc/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring02_ioc/target/test-classes/MyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring03_di/spring03_di.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring03_di/spring03_di.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring03_di/src/main/resources/userBeans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring03_di/src/main/resources/userBeans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring04_autowired/spring04_autowired.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring04_autowired/spring04_autowired.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring05_autowired/spring05_autowired.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring05_autowired/spring05_autowired.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring06_anno/spring06_anno.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring06_anno/spring06_anno.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring07_appconfig/spring07_appconfig.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring07_appconfig/spring07_appconfig.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring09_aop/spring09_aop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring09_aop/spring09_aop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring09_aop/src/main/java/com/zh/log/AfterLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring09_aop/src/main/java/com/zh/log/AfterLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring09_aop/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring09_aop/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring09_aop/target/classes/com/zh/log/AfterLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring09_aop/target/classes/com/zh/log/AfterLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_helloSpring/spring_helloSpring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_helloSpring/spring_helloSpring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_helloSpring/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_helloSpring/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring10_proxy/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/test/java/MyTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/target/test-classes/MyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring10_proxy/spring10_proxy.iml" afterDir="false" />
-    </list>
+    <list default="true" id="4fca3e56-b8d5-46ed-a255-d2460d6db975" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/spring_helloSpring/target/" />
@@ -178,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring12_transaction/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+            <state relative-caret-position="251">
+              <caret line="72" column="15" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -341,10 +235,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="y" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1048" />
+    <option name="x" value="950" />
+    <option name="y" value="-10" />
+    <option name="width" value="979" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -373,7 +267,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring12_transaction/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -514,7 +408,7 @@
       <workItem from="1581860351302" duration="13000" />
       <workItem from="1581860667222" duration="605000" />
       <workItem from="1582337558793" duration="17038000" />
-      <workItem from="1582422250000" duration="14201000" />
+      <workItem from="1582422250000" duration="14359000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1581479512312</created>
@@ -523,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581479512312</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mybatis和事务的补全">
+      <created>1582437480144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582437480144</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -559,12 +460,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74280000" />
+    <option name="totallyTimeSpent" value="74438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20576407" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20576407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -574,7 +476,7 @@
       <window_info anchor="bottom" id="Database Console" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.41218132" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.41218132" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -636,7 +538,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="mybatis和事务的补全" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis和事务的补全" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1051,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring12_transaction/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+        <state relative-caret-position="251">
+          <caret line="72" column="15" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
         </state>
       </provider>
     </entry>
